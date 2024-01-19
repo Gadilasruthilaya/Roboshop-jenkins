@@ -1,0 +1,4 @@
+- name: running jobs
+  ansible.builtin.include_tasks:
+    file: job.yml
+  loop: "{{ jobs}}"
