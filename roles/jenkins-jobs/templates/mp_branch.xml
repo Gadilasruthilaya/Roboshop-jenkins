@@ -23,7 +23,7 @@
             <jenkins.branch.BranchSource>
                 <source class="jenkins.plugins.git.GitSCMSource" plugin="git@5.2.1">
                     <id>ee38e403-babe-47d7-a37c-11113f51df21</id>
-                    <remote>http://github.com/Gadilasruthilaya/learn-jenkins-1</remote>
+                    <remote>http://github.com/Gadilasruthilaya/{{item}}</remote>
                     <credentialsId>ssh</credentialsId>
                     <traits>
                         <jenkins.plugins.git.traits.BranchDiscoveryTrait/>
