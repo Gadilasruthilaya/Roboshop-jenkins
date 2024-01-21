@@ -9,5 +9,5 @@
     config: "{{ lookup('file', '/tmp/mp_branch.xml') }}"
     name: "{{ item }}"
     password: admin123
-    url: http://18.206.230.254:8080
+    url: http://172.31.89.34:8080
     user: admin
