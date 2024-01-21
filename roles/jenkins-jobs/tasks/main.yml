@@ -1,4 +1,12 @@
 - name: running jobs
   ansible.builtin.include_tasks:
-    file: job.yml
+    file: sp_job.yml
+  loop: "{{ sp_jobs}}"
+
+
+- name: running jobs
+  ansible.builtin.include_tasks:
+    file: mp_job.yml
   loop: "{{ mp_jobs}}"
+
+
