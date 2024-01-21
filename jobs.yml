@@ -2,7 +2,7 @@
   hosts: localhost
   connection: local
   vars:
-    jobs:
+    mp_jobs:
       - roboshop-terraform
       - cart
       - catalogue
