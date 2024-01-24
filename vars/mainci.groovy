@@ -1,12 +1,12 @@
 def call() {
-    node('workshop') {
+    node('workstation') {
 
-        // if (env.cibuild == "java") {
+         if (env.cibuild == "java") {
         stage('build') {
             sh 'mvn package'
             echo 'build'
         }
-    //}
+    }
             stage('unit test') {
                 echo 'unit test'
                 // sh 'npm test'
@@ -21,6 +21,7 @@ def call() {
                 echo 'security scans'
             }
 
+           if (env.TAG_NAME == '.*')
             stage('artifact creation') {
                 echo 'artifact creation'
             }
